@@ -4,57 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="exercoff.css">
-    <title>Bombas Hidraulicas</title>
+    <title>Bombas Hidráulicas</title>
 </head>
 <body>
-    <div class="homepai">
-        <div class="homefilho">
-            <img class="foto" src="Windows.png" alt="Logo">
-            <p>Home</p>
-            <p>Sobre</p>
-            <p>Contato</p>
+    <header class="topo">
+        <div class="nav-row">
+            <img src="Windows.png" alt="Logo" class="logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-    </div>
-    <header>
-        <h1>Bombas Hidraulicas</h1>
     </header>
 
-    <div class="corpo">
-        <h1>Nossas soluções</h1>
-        <p> Trabalhamos com o que há de mais moderno em sistemas do bombeamento de água.</p>
-    </div>
-            <div class="lado">    
-                <div class= "caixa">
-                    <img class="foto2" src="1.jpg" alt="Bomba 1">
-                    <h1>Alta pressão</h1>
-                    <p>Ideal para prédios e sistemas que exigem força total.</p>
-                    <button class="btn"> Saiba mais </button>
-                </div>
-                <div class= "caixa">
-                    <img class="foto2" src="2.jpg" alt="Bomba 2 ">
-                    <h1>Submersíveis</h1>
-                    <p>Bombas projetadas para trabalhar dentro de água.</p>
-                    <button class="btn"> Saiba mais </button>
-                </div>
-                <div class= "caixa">
-                    <img class="foto2" src="3.jpg" alt="Bomba 3">
-                    <h1>Manutenção</h1>
-                    <p>Suporte técico especializado para todos os modelos</p>
-                    <button class="btn"> Saiba mais </button>
-                </div>
-        
+    <section class="hero" id="home">
+        <h1>Bombas Hidráulicas</h1>
+        <p>Trabalhamos com o que há de mais moderno em sistemas do bombeamento de água.</p>
+    </section>
 
+    <main class="conteudo">
+        <h2>Nossas soluções</h2>
+        <p>Trabalhamos com o que há de mais moderno em sistemas do bombeamento de água.</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="1.jpg" alt="Alta pressão">
+                <h3>Alta pressão</h3>
+                <p>Ideal para prédios e sistemas que exigem força total.</p>
+                <button class="btn" data-service="Alta pressão">Saiba mais</button>
             </div>
-         
-<article>
-    <img class="foto" src="Facebook_logo_(square).png" alt="Facebook">
-    <img class="foto" src="Instagram_icon.png" alt="Instagram">
-    <img class="foto" src="Youtube_logo.png" alt="Youtube">
-</article>
-<footer>
-    <p> © 2026 Hidraulica Pro Brasil - Todos os direitos reservados.</p>
-</footer>
+            <div class="card">
+                <img src="2.jpg" alt="Submersíveis">
+                <h3>Submersíveis</h3>
+                <p>Bombas projetadas para trabalhar dentro de água.</p>
+                <button class="btn" data-service="Submersíveis">Saiba mais</button>
+            </div>
+            <div class="card">
+                <img src="3.jpg" alt="Manutenção">
+                <h3>Manutenção</h3>
+                <p>Suporte técnico especializado para todos os modelos.</p>
+                <button class="btn" data-service="Manutenção">Saiba mais</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="redes">
+            <img src="Facebook_logo_(square).png" alt="Facebook">
+            <img src="Instagram_icon.png" alt="Instagram">
+            <img src="Youtube_logo.png" alt="Youtube">
+        </div>
+        <p>© <span id="year"></span> Hidráulica Pro Brasil - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./exercoff.js"></script>
 </body>
-<script src="./exercoff.js"></script>
 </html>
 
